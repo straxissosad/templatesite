@@ -13,34 +13,34 @@
     <title>React App</title>
   </head>
   <body>
-    <header>
+    <header class ="flex">
       <nav>
-        <ul class="nav__links">
-          <li class="nav-item"><a href="#">DISCOVER</a></li>
-          <li class="nav-item"><a href="#">DOCS</a></li>
-          <li class="nav-item"><a href="#">CONSOLE</a></li>
-          <li class="nav-item"><a href="#">COMMUNITY</a></li>
-          <li class="nav-item"><a href="#">DASHBOARD</a></li>
+        <ul class="nav__links font-montserrat flex">
+          <li class="nav-item"><a href="#" class="white">DISCOVER</a></li>
+          <li class="nav-item"><a href="#" class="white">DOCS</a></li>
+          <li class="nav-item"><a href="#" class="white">CONSOLE</a></li>
+          <li class="nav-item"><a href="#" class="white">COMMUNITY</a></li>
+          <li class="nav-item"><a href="#" class="white">DASHBOARD</a></li>
         </ul>
       </nav>
     </header>
     
-    <div class="second_navbar">
-      <a href="#" class ="left_piece">WEB API</a>
-      <div class="right_piece">
-        <ul class="second_nav_links">
-          <li class="second_nav_item"><a href="#">QUICK START</a></li>
-          <li class="second_nav_item"><a href="#">GUIDES</a></li>
-          <li class="second_nav_item"><a href="#">LIBRARIES</a></li>
-          <li class="second_nav_item"><a href="#">REFERENCE</a></li>
+    <div class="second_navbar flex">
+      <a href="#" class ="left_piece font-montserrat white">WEB API</a>
+      <div class="right_piece font-montserrat flex">
+        <ul class="second_nav_links flex">
+          <li class="second_nav_item"><a href="#" class="white">QUICK START</a></li>
+          <li class="second_nav_item"><a href="#" class="white">GUIDES</a></li>
+          <li class="second_nav_item"><a href="#" class="white">LIBRARIES</a></li>
+          <li class="second_nav_item"><a href="#" class="white">REFERENCE</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="main_content">
-      <div class="sidebar">
+    <div class="main_content flex">
+      <div class="sidebar font-montserrat">
         <p>ENDPOINTS</p>
-        <ul class="sidebar_links">
+        <ul class="sidebar_links ">
           <li class="sidebar_item"><a href="#">Albums</a></li>
           <li class="sidebar_item"><a href="#">Artists</a></li>
           <li class="sidebar_item"><a href="#">Shows</a></li>
@@ -56,15 +56,15 @@
         </ul>
       </div>
       <div class="page">
-        <h1 class ="main_header">Search for Item</h1>
-        <div class="content">
-          <div class="left_content">
+        <h1 class ="main_header font-montserrat">Search for Item</h1>
+        <div class="content flex">
+          <div class="left_content font-montserrat">
             <div class="subscription">
               <p>
                 Get Spotify catalog information about albums, artists, playlists, tracks, shows or episodes that match a keyword string.
               </p>
             </div>
-            <div class="request">
+            <div class="request font-montserrat flex">
               <span>Request</span>
             </div>
             <div class="title">
@@ -74,7 +74,7 @@
               <div class="title">
                 Query
               </div>
-              <div class="text">
+              <div class="text font-montserrat flex">
                 <div class="text_title">
                   <span>q </span> string
                 </div>
@@ -87,7 +87,7 @@
                     The isrc and track filters can be used while searching tracks.
                     The upc, tag:new and tag:hipster filters can only be used while searching albums. The tag:new filter will return albums released in the past two weeks and tag:hipster can be used to return only albums with the lowest 10% popularity.</p>
                 </div>
-                <div class="exmple">
+                <div class="example">
                   <p>Example value:
                     "remaster%20track:Doxy+artist:Miles%20Davis"</p>
                 </div>
@@ -95,10 +95,20 @@
               </div>
             </div>
           </div>
-          <div class="right_content">
+          <div class="right_content font-montserrat">
+            <div class="right_header">
               <p>
                 Request Sample: Shell / cURL
               </p>
+            </div>
+            <div class="code font-montserrat">
+              <div>
+                <p>curl --request GET \</p>
+                <p>--url 'https://api.spotify.com/v1/search?type=album&include_external=audio' \</p>
+                <p>--header 'Authorization: ' \</p>
+                <p>--header 'Content-Type: application/json'</p>
+              </div>
+            </div>
           </div>
         </div>
       </div> 
